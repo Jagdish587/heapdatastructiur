@@ -8,10 +8,10 @@ void maxHeap(int arr[], int index, int size)
     int left = 2*index + 1;
     int right = 2*index + 2;
 
-    if(left <= size && arr[left] > arr[largest])
+    if(left < size && arr[left] > arr[largest])
         largest = left;
 
-    if(right <= size && arr[right] > arr[largest])
+    if(right < size && arr[right] > arr[largest])
         largest = right;
 
     if(largest != index) {
